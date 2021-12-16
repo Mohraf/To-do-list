@@ -7,7 +7,11 @@
         {{todo.title}}
       </li>
       <button (click)="toggleDetails(i)">View Details</button>
-
+      <app-to-do-details
+        *ngIf="todo.showDetails"
+        [todo]="todo"
+      >
+      </app-to-do-details>
     </div>
   </ul>
 </div>
