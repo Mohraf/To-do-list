@@ -1,0 +1,13 @@
+<div>
+  <h1>To Do List</h1>
+  <hr>
+  <ul>
+    <div *ngFor="let todo of todos; let i = index">
+      <li>
+        {{todo.title}}
+      </li>
+      <!-- <button (click)="toggleDetails(i)">View Details</button> -->
+
+    </div>
+  </ul>
+</div>
